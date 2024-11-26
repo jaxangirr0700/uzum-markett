@@ -63,6 +63,7 @@
         }
         .item-imggg {
           width: 100%;
+          height: 300px;
           max-height: 350px;
         }
       }
@@ -97,6 +98,10 @@
         &:hover {
           transform: scale(1.1);
           background-color: lightgray;
+        }
+        &:active {
+          transform: scale(1.05);
+          background-color: white;
         }
       }
     }
@@ -163,6 +168,11 @@ footer {
           text-shadow: 1px 1px 10px gray;
         }
       }
+      .hnone {
+        &:hover {
+          text-shadow: none;
+        }
+      }
       .liapp {
         display: flex;
         flex-wrap: wrap;
@@ -179,7 +189,13 @@ footer {
         display: flex;
         gap: 15px;
         img {
+          padding-bottom: 5px;
+          border-bottom: 5px solid transparent;
+
           cursor: pointer;
+          &:hover {
+            border-bottom: 5px solid purple;
+          }
         }
       }
     }
